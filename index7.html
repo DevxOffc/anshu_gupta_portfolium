@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My Personal Portfolio" />
+    <meta name="keywords" content="to be updated soon" />
+    <meta name="author" content="Shivam Kumar" />
+    <link rel="icon" type="image/jpg" href="favicon/favicon.ag.jpg">
+    <title>Anshu Gupta Portfolio</title>
+    <link rel="stylesheet" href="style7.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">Anshu Gupta</a>
+
+       <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="index2.html">Photography</a>
+        <a href="index3.html">Visuals</a>
+        <a href="index4.html">Scripting</a>
+        <a href="index5.html">Writing</a>
+        <a href="index6.html">Films</a>
+        <a href="index8.html">Research</a>
+        <a href="index9.html">Others</a>
+      </nav>
+    </header>
+
+    <section class="portfolio-section">
+      <h2 class="section-heading">Social Media Management</h2>
+      <p class="section-description">
+        Here's a collection of my social media management work, showcasing
+        content creation, campaign strategies, and engagement growth across
+        various platforms. Each piece reflects my approach to visual
+        storytelling and brand consistency.
+      </p>
+
+      <div class="portfolio-grid">
+        <div class="row-1">
+          <div
+            class="portfolio-card"
+            onclick="openLightbox('assets2.1/img1.jpg', 0)"
+          >
+            <img src="assets2.1/img1.jpg" alt="Social Media Work 1" />
+          </div>
+          <div
+            class="portfolio-card"
+            onclick="openLightbox('assets2.1/img2.jpg', 1)"
+          >
+            <img src="assets2.1/img2.jpg" alt="Social Media Work 2" />
+          </div>
+          <div
+            class="portfolio-card"
+            onclick="openLightbox('assets2.1/img3.jpg', 2)"
+          >
+            <img src="assets2.1/img3.jpg" alt="Social Media Work 3" />
+          </div>
+          <div
+            class="portfolio-card"
+            onclick="openLightbox('assets2.1/img4.jpg', 3)"
+          >
+            <img src="assets2.1/img4.jpg" alt="Social Media Work 4" />
+          </div>
+        </div>
+
+        <div class="row-2">
+          <div
+            class="portfolio-card"
+            onclick="openLightbox('assets2.1/img5.jpg', 4)"
+          >
+            <img src="assets2.1/img5.jpg" alt="Social Media Work 5" />
+          </div>
+          <div
+            class="portfolio-card"
+            onclick="openLightbox('assets2.1/img6.jpg', 5)"
+          >
+            <img src="assets2.1/img6.jpg" alt="Social Media Work 6" />
+          </div>
+          <div
+            class="portfolio-card"
+            onclick="openLightbox('assets2.1/img7.jpg', 6)"
+          >
+            <img src="assets2.1/img7.jpg" alt="Social Media Work 7" />
+          </div>
+          <div
+            class="portfolio-card"
+            onclick="openLightbox('assets2.1/img8.jpg', 7)"
+          >
+            <img src="assets2.1/img8.jpg" alt="Social Media Work 8" />
+          </div>
+          <div
+            class="portfolio-card"
+            onclick="openLightbox('assets2.1/img9.jpg', 8)"
+          >
+            <img src="assets2.1/img9.jpg" alt="Social Media Work 9" />
+          </div>
+        </div>
+
+        <div class="row-3">
+          <div
+            class="portfolio-card"
+            onclick="openLightbox('assets2.1/img10.jpg', 9)"
+          >
+            <img src="assets2.1/img10.jpg" alt="Social Media Work 10" />
+          </div>
+          <div
+            class="portfolio-card"
+            onclick="openLightbox('assets2.1/img11.jpg', 10)"
+          >
+            <img src="assets2.1/img11.jpg" alt="Social Media Work 11" />
+          </div>
+          <div
+            class="portfolio-card"
+            onclick="openLightbox('assets2.1/img12.jpg', 11)"
+          >
+            <img src="assets2.1/img12.jpg" alt="Social Media Work 12" />
+          </div>
+          <div
+            class="portfolio-card"
+            onclick="openLightbox('assets2.1/img13.jpg', 12)"
+          >
+            <img src="assets2.1/img13.jpg" alt="Social Media Work 13" />
+          </div>
+          <div
+            class="portfolio-card"
+            onclick="openLightbox('assets2.1/img14.jpg', 13)"
+          >
+            <img src="assets2.1/img14.jpg" alt="Social Media Work 14" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="lightbox" id="lightbox">
+      <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+      <div class="lightbox-content">
+        <span class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)"
+          >&#10094;</span
+        >
+        <img id="lightbox-image" src="" alt="" />
+        <span class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)"
+          >&#10095;</span
+        >
+      </div>
+    </div>
+    <section class="work-section" id="work-section">
+      <h2 class="section-title">Explore My Works</h2>
+      <div class="button-grid">
+        <button
+          class="work-button"
+          onclick="window.location.href='index.html'"
+        >
+          <div class="icon-circle">
+            <img src="assets/wicon10.png" alt="Home" class="icon-img" />
+          </div>
+          <span class="button-text">HOME PAGE</span>
+        </button>
+
+        <button
+          class="work-button"
+          onclick="window.location.href='index2.html'"
+        >
+          <div class="icon-circle">
+            <img
+              src="assets/wicon1.png"
+              alt="photography"
+              class="icon-img"
+            />
+          </div>
+          <span class="button-text">PHOTOGRAPHY</span>
+        </button>
+
+        <button
+          class="work-button"
+          onclick="window.location.href='index3.html'"
+        >
+          <div class="icon-circle">
+            <img src="assets/wicon2.png" alt="Crafting" class="icon-img" />
+          </div>
+          <span class="button-text">VISUAL CONCEPTS</span>
+        </button>
+
+        <button
+          class="work-button"
+          onclick="window.location.href='index4.html'"
+        >
+          <div class="icon-circle">
+            <img
+              src="assets/wicon3.png"
+              alt="scripting"
+              class="icon-img"
+            />
+          </div>
+          <span class="button-text">SCRIPT WRITING</span>
+        </button>
+
+        <button
+          class="work-button"
+          onclick="window.location.href='index5.html'"
+        >
+          <div class="icon-circle">
+            <img
+              src="assets/wicon4.png"
+              alt="content"
+              class="icon-img"
+            />
+          </div>
+          <span class="button-text">CONTENT WRITING</span>
+        </button>
+
+        <button
+          class="work-button"
+          onclick="window.location.href='index6.html'"
+        >
+          <div class="icon-circle">
+            <img
+              src="assets/wicon5.png"
+              alt="films"
+              class="icon-img"
+            />
+          </div>
+          <span class="button-text">SHORT FILMS</span>
+        </button>
+
+        <button
+          class="work-button"
+          onclick="window.location.href='index8.html'"
+        >
+          <div class="icon-circle">
+            <img
+              src="assets/wicon7.png"
+              alt="research works"
+              class="icon-img"
+            />
+          </div>
+          <span class="button-text">RESEARCH WORKS</span>
+        </button>
+
+        <button
+          class="work-button"
+          onclick="window.location.href='index9.html'"
+        >
+          <div class="icon-circle">
+            <img
+              src="assets/wicon8.png"
+              alt="additional works"
+              class="icon-img"
+            />
+          </div>
+          <span class="button-text">OTHER WORKS</span>
+        </button>
+      </div>
+
+      <button
+        class="back-to-top"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      >
+        <img src="assets/wicon9.png" alt="Up arrow" />
+        Back to Top
+      </button>
+    </section>
+    <footer>
+      <div class="footer-container" id="footer-container">
+        <div class="logo-center">
+          <a href="#home" class="logo-name">Anshu Gupta</a>
+        </div>
+
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="index.html#home">
+                  <i class="fas fa-home"></i>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#about">
+                  <i class="fas fa-user"></i>
+                  <span>About Me</span>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#skills-section">
+                  <i class="fas fa-briefcase"></i>
+                  <span>Skills</span>
+                </a>
+              </li>
+              <li>
+                <a href="index.html#certificates-section">
+                  <i class="fas fa-certificate"></i>
+                  <span>Certificates</span>
+                </a>
+              </li>
+              <li>
+                <a href="#contact">
+                  <i class="fas fa-envelope"></i>
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Me</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fa-solid fa-copyright"></i>
+                <span>ANSHU GUPTA</span>
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+917384246594">+91 73842 46594</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:anshugupta11090903@gmail.com"
+                  >anshugupta11090903@gmail.com</a
+                >
+              </li>
+            </ul>
+
+            <h3>Follow Me</h3>
+            <div class="social-buttons">
+              <a
+                href="https://www.linkedin.com/in/anshu-gupta-49a880253/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                class="social-button"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://www.blogger.com/profile/01608725990984652173"
+                class="social-button"
+                target="_blank"
+              >
+                <i class="fa-brands fa-wordpress"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/a.ns.hu/profilecard/?igsh=emlieTk4ZXFreWZy"
+                class="social-button"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Developer Contact</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-user-tie"></i>
+                <span>Developed by: SHIVAM KUMAR</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:shivamfromktr@outlook.com"
+                  >shivamfromktr@outlook.com</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+917091020035">+917091020035</a>
+              </li>
+            </ul>
+
+            <h3>Developer's Social</h3>
+            <div class="social-buttons">
+              <a
+                href="https://www.linkedin.com/in/shivam-kumar-3565022a8/"
+                class="social-button"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/DevxShivam"
+                class="social-button"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://x.com/xshivamx07"
+                class="social-button"
+                target="_blank"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          &copy; <span id="current-year"></span> Anshu Gupta Portfolio. All
+          Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const imageSources = [
+        "assets2.1/img1.jpg",
+        "assets2.1/img2.jpg",
+        "assets2.1/img3.jpg",
+        "assets2.1/img4.jpg",
+        "assets2.1/img5.jpg",
+        "assets2.1/img6.jpg",
+        "assets2.1/img7.jpg",
+        "assets2.1/img8.jpg",
+        "assets2.1/img9.jpg",
+        "assets2.1/img10.jpg",
+        "assets2.1/img11.jpg",
+        "assets2.1/img12.jpg",
+        "assets2.1/img13.jpg",
+        "assets2.1/img14.jpg",
+      ];
+
+      let currentImageIndex = 0;
+
+      function openLightbox(imageSrc, index) {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImage = document.getElementById("lightbox-image");
+
+        currentImageIndex = index;
+        lightboxImage.src = imageSrc;
+        lightbox.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeLightbox() {
+        const lightbox = document.getElementById("lightbox");
+        lightbox.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      function navigateLightbox(direction) {
+        currentImageIndex += direction;
+
+        if (currentImageIndex >= imageSources.length) {
+          currentImageIndex = 0;
+        } else if (currentImageIndex < 0) {
+          currentImageIndex = imageSources.length - 1;
+        }
+
+        document.getElementById("lightbox-image").src =
+          imageSources[currentImageIndex];
+      }
+
+      document
+        .getElementById("lightbox")
+        .addEventListener("click", function (e) {
+          if (e.target === this) {
+            closeLightbox();
+          }
+        });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeLightbox();
+        } else if (e.key === "ArrowLeft") {
+          navigateLightbox(-1);
+        } else if (e.key === "ArrowRight") {
+          navigateLightbox(1);
+        }
+      });
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+    <script src="javascript.js"></script>
+  </body>
+</html>
